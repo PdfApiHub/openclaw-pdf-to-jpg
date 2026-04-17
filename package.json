@@ -1,5 +1,5 @@
 {
-  "name": "pdfapihub-pdf-to-jpg",
+  "name": "pdf-to-jpg",
   "version": "1.0.0",
   "description": "Convert PDF pages to high-quality JPG images with customizable DPI, resolution, and quality settings. Extract individual pages or batch convert entire documents. Powered by PDFAPIHub.",
   "type": "module",
