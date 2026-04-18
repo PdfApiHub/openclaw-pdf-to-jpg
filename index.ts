@@ -61,7 +61,7 @@ function buildBody(params: Record<string, unknown>): Record<string, unknown> {
 }
 
 const plugin: PluginEntry = {
-  id: "pdfapihub-pdf-to-jpg",
+  id: "pdf-to-jpg",
   name: "PDF to JPG",
   register(api) {
     // ─── PDF to JPG ──────────────────────────────────────────

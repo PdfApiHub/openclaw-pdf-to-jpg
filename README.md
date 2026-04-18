@@ -28,18 +28,33 @@ Transform PDF document pages into JPG, PNG, or WebP images — one page at a tim
 ## Installation
 
 ```bash
-openclaw plugins install clawhub:pdfapihub-pdf-to-jpg
+openclaw plugins install clawhub:pdf-to-jpg
 ```
 
 ## Configuration
 
-Add your API key in `~/.openclaw/openclaw.json`:
+**Privacy note:** PDFs you convert are uploaded to PDFAPIHub's cloud service for rendering. Files are auto-deleted after 30 days.
 
 ```json
 {
   "plugins": {
     "entries": {
-      "pdfapihub-pdf-to-jpg": {
+      "pdf-to-jpg": {
+        "enabled": true,
+        "apiKey": "your-api-key-here"
+      }
+    }
+  }
+}
+```
+
+Or use the `env` approach:
+
+```json
+{
+  "plugins": {
+    "entries": {
+      "pdf-to-jpg": {
         "enabled": true,
         "env": {
           "PDFAPIHUB_API_KEY": "your-api-key-here"
